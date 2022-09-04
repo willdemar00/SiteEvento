@@ -17,4 +17,4 @@ Route::get('/',[EventController::class,'index']);
 
 Route::get('/eventos',[EventController::class,'evento']);
 
-Route::get('/crearEvento',[EventController::class,'criar']);
+Route::get('/criarEvento',[EventController::class,'criar']);

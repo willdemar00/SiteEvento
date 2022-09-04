@@ -17,7 +17,7 @@
                     <li>
                     <a href="/eventos">Eventos</a>
                     <li>
-                    <a href="/crearEvento">Criar Eventos</a>
+                    <a href="/creirEvento">Criar Eventos</a>
                     <li>
                     <a href="#">Entrar</a>
                     <li>
