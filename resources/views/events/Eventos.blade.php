@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1>pagian 2</h1>
+    @foreach($events as $eve)
+    {{$eve->titulo}}--{{$eve->descricao}}<br>
+    @endforeach
     <a href="/">voltar</a>
     
 </body>

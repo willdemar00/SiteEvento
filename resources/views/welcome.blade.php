@@ -28,6 +28,21 @@
         
         
     </header>
+    <main>
+        <form action="">
+            <div class="colun">
+                <div>
+                    <label for="busca">Buscar Eventos</label><br>
+                    <div>
+                        <input type="text" name="busca" id="ibusca" placeholder="procurar...">
+                        <input class="botton" type="submit" value="Buscar">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </main>
+
     <a href="/eventos">pagina 2</a>
 </body>
 </html>
