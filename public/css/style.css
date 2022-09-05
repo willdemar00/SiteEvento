@@ -7,10 +7,12 @@ header{
     background-color: #F2C48D;
     align-items: center;
     text-align:center;
+    border:solid 3px #4B4573;
 }
 .conter{
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 img{
