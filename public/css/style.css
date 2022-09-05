@@ -5,16 +5,18 @@
 }
 header{
     background-color: #F2C48D;
+    align-items: center;
+    text-align:center;
 }
 .conter{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 
 }
 img{
-    border-radius: 59%;
+    border-radius: 50%;
     width: 100px;
+    margin: 10px;
 }
 .menu{
     display: flex;
@@ -22,10 +24,11 @@ img{
  
 }
 li>a{
-    margin: 10px;
-    padding: 0px 5px 0 5px;
+    margin: 05px;
+    padding: 0px 5px 0px 5px;
     text-decoration: none;
     color:#4B4573;
+    text-align: justify;
 }
 .menu a:hover{
     
@@ -34,7 +37,7 @@ li>a{
     padding: 2px 5px 2px 5px;
     background-color:#F28D9F;
     color: #F2F2F2;
-    box-shadow:inset -1px 0px 2px 2px #c61432;
+    box-shadow:inset 1px 1px 2px 2px #c61432;
     font-weight: 800;
 
 }
