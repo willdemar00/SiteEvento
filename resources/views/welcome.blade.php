@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="conter">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRy2Rmfbx_nd1i_n5BEJMe4Bk3ewMVrdx7A&usqp=CAU" alt="">
+            <img src="img/loga1.png" alt="">
                 <ul class="menu">
                     <li>
                     <a href="/eventos">Eventos</a>
@@ -29,20 +29,7 @@
         
     </header>
     <main>
-        <form action="">
-            <div class="colun">
-                <div>
-                    <label for="busca">Buscar Eventos</label><br>
-                    <div>
-                        <input type="text" name="busca" id="ibusca" placeholder="procurar...">
-                        <input class="botton" type="submit" value="Buscar">
-                    </div>
-                </div>
 
-            </div>
-        </form>
     </main>
-
-    <a href="/eventos">pagina 2</a>
 </body>
 </html>
