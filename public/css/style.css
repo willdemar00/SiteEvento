@@ -1,3 +1,5 @@
+/* CONFIGURAÇÃO GERAL */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,9 +10,22 @@ body{
     margin: auto;
     text-align: center;
 }
+.msg{
+    background-color: #8df2b04a;
+    padding: 8px 2px 8px 2px;
+    border: solid 1px #45a166;
+    margin-bottom: 5px;
+    color: #45a166;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 0px #0000009e;
+
+}
+
+/* CABEÇARIO */
+
 header{
     background-color: #F28D9F;
-    /* background-color: #F2C48D; */
     align-items: center;
     text-align:center;
     border:solid 3px #4B4573;
@@ -35,7 +50,7 @@ img{
     
     border-radius: 50%;
     width: 100px;
-    margin: 10px;
+    margin: 3px;
 }
 .menu{
     display: flex;
@@ -78,40 +93,109 @@ div>label{
     font-weight: bold;
     font-size:larger;
     background-color:#F28D9F;
-    border-radius: 10px;
+    border-radius: 5px;
     border: solid 2px #4B4573;
     padding: 3px;
 
 }
+
+/* MAIN */
+
 div.card{
     display:inline-block;
     border:solid 2px #4B4573;
+    color: #4B4573;
+    border-radius: 5px;
+    text-align:center;
+    margin: 5px 1px 5px 1px;
    
 }
+div h4{
+    text-align:center;
+}
+.card p{
+    padding: 2px;
+    background-color: #7EB0F2;
+    border: solid 1px #4B4573;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+p>a{
+    text-decoration: none;
+    color: #4B4573;
+}
+p:hover{
+   background-color:#F28D9F ;
+}
+
 input,.botton{
     color: #4B4573;
     border: solid 2px #4B4573;
     background-color:#f9f9f9;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
     margin-top: 8px;
     margin-right: -3px;
     margin-bottom: 5px;
     padding: 5px;
 }
-form>h3{
+form,h3{
     padding: 5px;
+    color: #4B4573;
 }
 
 .botton{
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 5px 5px 0px;
     background-color:#7EB0F2;
     margin-left: -3px;
+}
+.botton:hover{
+    background-color:#F28D9F;
+
 }
 main{
     padding:10px 10px ;
     background-color: #F2F2F2;
     border: solid 2px #4B4573;
     border-top:none;
-    margin-left: 10px;
-    margin-right: 20px
+    margin: 0px 20px 10px 10px;
+}
+
+/* CRIAR EVENTO*/
+
+.selec,option{
+    border-radius: 5px;
+    border:solid 2px #4B4573;
+    color: #4B4573;
+    margin-bottom: 5px;
+}
+div.criar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.private{
+    margin: 5px 0px 10px 0px;
+}
+.botCriar{
+        color: #4B4573;
+        border: solid 2px #4B4573;
+        background-color:#7EB0F2;
+        border-radius: 5px 5px 5px 5px;
+        margin-top: 8px;
+        margin-right: -3px;
+        margin-bottom: 5px;
+        padding: 5px 20px;
+}
+.botCriar:hover{
+    background-color:#F28D9F;
+
+}
+input:hover{
+    background-color:#7eb0f249;
+}
+.dados>div>input{
+    border-radius: 5px;
+
 }

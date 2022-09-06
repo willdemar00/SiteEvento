@@ -11,7 +11,7 @@
     border: solid 2px #4B4573 ;
     border-radius: 10px;
     padding: 2px 5px 2px 5px;
-    background-color:#7BABF1;
+    background-color:#7EB0F2;
     color: #F2F2F2;
     
 
@@ -43,10 +43,13 @@
     
         </header>
      <main>
+     @if(session('msg'))
+        <h4 class="msg">{{session('msg')}}</h4>
+        @endif
      <form action="">
             <div class="colun">
                 <div>
-                    <label for="busca">Buscar Eventos</label><br>
+                    <label for="ibusca">Buscar Eventos</label><br>
                     <div>
                         <input type="text" name="busca" id="ibusca" placeholder="procurar...">
                         <input class="botton" type="submit" value="Buscar">
@@ -59,11 +62,16 @@
         
         @foreach($events as $eve)
         <div class="card">
+            <img src="img\loga1.png" alt="">
             
-            <p>{{$eve->titulo}}</p>
+            <h4>{{$eve->titulo}}</h4>
+            <h6>10/12/2022</h6>
+            <h6>X participantes</h6>
+            <p><a href="#">Saber Mais...</a></p>
 
         </div>
         @endforeach
+
     </main>
     <a href="/">Home</a>
 </body>

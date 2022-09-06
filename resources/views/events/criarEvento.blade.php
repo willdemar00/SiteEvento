@@ -41,9 +41,39 @@
         
     </header>
 <main>
+    <form class="dados" action="/criar" method="POST">
+        @csrf
+        <div>
+            <label for="inome">Criar Evento</label></br>
+        </div>
+            <div class="criar">
+
+                <label for="titulo">Nome:</label>
+
+                <input type="text" name="titulo" placeholder="Nome do evento..." id="titulo"><br>
+
+                <label for="cidade">Cidade:</label>
+
+                <input type="text" name="cidade" placeholder="Nome da cidade..." id="cidade"><br>
+
+                <label class="private" for="privado">Privado?</label>
+
+                <select class="selec" name="privado" id="privado">
+                <option value="1">Nao</option>
+                <option value="0">sim</option>
+                </select>
+
+                <label for="descricao">Descricão</label>
+
+                <input type="text" name="descricao" placeholder="fala sobre o evento..." id="descricao">
+                
+            </div>
+            <input class="botCriar" type="submit" value="Criar">
+        
+    </form>
     
-        <a href="/">Home</a>
     
 </main>
+<a href="/">Home</a>
 </body>
 </html>
