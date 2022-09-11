@@ -26,6 +26,7 @@ class EventController extends Controller
         $events->cidade= $request->cidade;
         $events->privado= $request->privado;
         $events->descricao= $request->descricao;
+        $events->itens=$request->itens;
         
 
         //Imagem upload

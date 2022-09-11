@@ -10,7 +10,7 @@
     
     border: solid 2px #4B4573 ;
     border-radius: 10px;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 2px 2px 2px;
     background-color:#7EB0F2;
     color: #F2F2F2;
     

@@ -10,7 +10,7 @@
     
     border: solid 2px #4B4573 ;
     border-radius: 10px;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 2px 2px 2px;
     background-color:#7BABF1;
     color: #F2F2F2;
     
@@ -50,8 +50,8 @@
         
         
             <div class="criar">
-            <label for="imagem">Imagem</label>
-            <input type="file" name="imagem" id="imagem" required>
+               <label for="imagem">Imagem</label>
+               <input type="file" name="imagem" id="imagem" required>
 
                 <label for="titulo">Nome:</label>
 
@@ -71,8 +71,22 @@
                 <label for="descricao">Descricão</label>
 
                 <input type="text" name="descricao" placeholder="fala sobre o evento..." id="descricao"required>
+
+                <label for="">Adicione itens de infra estrutura </label>
+            </div> 
+<div class="chak">
+    
+                   
+                        <input id="Ichak" type="checkbox" name="itens[]" id="palco"value="Palco"> Palco <br>
+                        <input id="Ichak"type="checkbox" name="itens[]" id="cerveja"value="Cerveja Gratis">  Cerveja Gratis<br>
+                        <input id="Ichak"type="checkbox" name="itens[]" id="brindes"value="Brindes">  Brindes <br>
+                        <input id="Ichak"type="checkbox" name="itens[]" id="acentos" value="acentos">  Acentos <br>
+                            
+                        </div>
+                   
+            
                 
-            </div>
+            
             <input class="botCriar" type="submit" value="Criar">
         
     </form>

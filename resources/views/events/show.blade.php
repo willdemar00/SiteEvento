@@ -17,8 +17,19 @@
                 <h1>{{$events->titulo}}</h1>
             </div>
             <div class="txt">
-                <p>{{$events->cidade}}</p>
-                <p>{{$events->descricao}}</p>
+                         <p>Informacões do evento</p>
+                          {{$events->cidade}} <br>
+                        {{$events->descricao}}
+                        <p>O evento conta com</p>
+                <div class="chak">
+                    <ul>
+                        @foreach($events->itens as $iten)
+                        <p>
+                            <li>{{$iten}}</li>
+                        </p>
+                        @endforeach
+                    </ul>
+                </div>
             
             </div>
         </span>
