@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="conter">
-            <img src="img/loga1.png" alt="">
+            <img src="img/exemplo.png" alt="">
                 <ul class="menu">
                     <li>
                     <a href="/eventos">Eventos</a>

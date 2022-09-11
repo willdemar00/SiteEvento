@@ -25,7 +25,7 @@
 <header>
         <nav>
             <div class="conter">
-            <img src="img/loga1.png" alt="">
+            <img src="img/exemplo.png" alt="">
                 <ul class="menu">
                     <li>
                     <a class="ativo" href="/eventos">Eventos</a>
@@ -62,12 +62,12 @@
         
         @foreach($events as $eve)
         <div class="card">
-            <img src="img\loga1.png" alt="">
+            <img src="img\events/{{$eve->imagem}}" alt="">
             
             <h4>{{$eve->titulo}}</h4>
             <h6>10/12/2022</h6>
             <h6>X participantes</h6>
-            <p><a href="#">Saber Mais...</a></p>
+            <p><a href="/infor/{{$eve->id}}">Saber Mais...</a></p>
 
         </div>
         @endforeach

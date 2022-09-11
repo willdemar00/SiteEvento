@@ -21,6 +21,14 @@ body{
     box-shadow: 1px 2px 2px 0px #0000009e;
 
 }
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    padding: 0px 120px 0px 120px;
+}
+
 
 /* CABEÇARIO */
 
@@ -42,6 +50,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 
 
@@ -97,6 +106,7 @@ div>label{
     border: solid 2px #4B4573;
     padding: 3px;
 
+
 }
 
 /* MAIN */
@@ -112,6 +122,8 @@ div.card{
 }
 div h4{
     text-align:center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .card p{
     padding: 2px;
@@ -196,6 +208,49 @@ input:hover{
     background-color:#7eb0f249;
 }
 .dados>div>input{
+    border-radius: 5px;
+
+}
+h2{
+    background-color: #F28D9F;
+   text-align: center;
+   margin-bottom: 10px;
+   border: solid 2px #4B4573;
+   border-radius: 5px;
+}
+/* mais informaçõaes do evento */
+.imgInfor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.imgCont{
+    width: 120px;
+    border: solid 2px #4B4573;
+    border-radius: 5px;
+    background-color: #F28D9F;
+    margin: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.txt,h1{
+    margin: 10px;
+    text-align: left;
+    color: #4B4573;
+}
+span{
+    margin: 10px;
+}
+.conter1{
+    margin: 10px 34px 10px 10px;
+    border: solid 2px #4B4573;
+    border-radius: 5px;
+
+}
+div>p{
+    background-color: #7EB0F2;
+    border: solid 2px #4B4573;
     border-radius: 5px;
 
 }

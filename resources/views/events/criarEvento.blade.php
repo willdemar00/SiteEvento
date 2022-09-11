@@ -24,7 +24,7 @@
 <header>
         <nav>
             <div class="conter">
-            <img src="img/loga1.png" alt="">
+            <img src="img/exemplo.png" alt="">
                 <ul class="menu">
                     <li>
                     <a href="/eventos">Eventos</a>
@@ -41,20 +41,25 @@
         
     </header>
 <main>
-    <form class="dados" action="/criar" method="POST">
+    <form class="dados" action="/criar" method="POST" enctype="multipart/form-data">
         @csrf
-        <div>
-            <label for="inome">Criar Evento</label></br>
+
+        <div class="titulo">
+             <h2>Criar Evento</h2>
         </div>
+        
+        
             <div class="criar">
+            <label for="imagem">Imagem</label>
+            <input type="file" name="imagem" id="imagem" required>
 
                 <label for="titulo">Nome:</label>
 
-                <input type="text" name="titulo" placeholder="Nome do evento..." id="titulo"><br>
+                <input required type="text" name="titulo" placeholder="Nome do evento..." id="titulo" required ><br>
 
                 <label for="cidade">Cidade:</label>
 
-                <input type="text" name="cidade" placeholder="Nome da cidade..." id="cidade"><br>
+                <input type="text" name="cidade" placeholder="Nome da cidade..." id="cidade"required><br>
 
                 <label class="private" for="privado">Privado?</label>
 
@@ -65,7 +70,7 @@
 
                 <label for="descricao">Descricão</label>
 
-                <input type="text" name="descricao" placeholder="fala sobre o evento..." id="descricao">
+                <input type="text" name="descricao" placeholder="fala sobre o evento..." id="descricao"required>
                 
             </div>
             <input class="botCriar" type="submit" value="Criar">
