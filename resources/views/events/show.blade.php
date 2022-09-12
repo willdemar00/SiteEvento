@@ -19,7 +19,8 @@
             <div class="txt">
                          <p>Informacões do evento</p>
                           {{$events->cidade}} <br>
-                        {{$events->descricao}}
+                        {{$events->descricao}} <br>
+                        {{date('d/m/Y',strtotime($events->data))}}
                         <p>O evento conta com</p>
                 <div class="chak">
                     <ul>

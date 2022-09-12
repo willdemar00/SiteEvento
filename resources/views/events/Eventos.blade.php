@@ -65,12 +65,15 @@
             <img src="img\events/{{$eve->imagem}}" alt="">
             
             <h4>{{$eve->titulo}}</h4>
-            <h6>10/12/2022</h6>
+            <h6>{{date('d/m/Y',strtotime($eve->data))}}</h6>
             <h6>X participantes</h6>
             <p><a href="/infor/{{$eve->id}}">Saber Mais...</a></p>
 
         </div>
         @endforeach
+        @if(count($events)==0)
+        <p>Não há evento disponiveis</p>
+        @endif
 
     </main>
     <a href="/">Home</a>

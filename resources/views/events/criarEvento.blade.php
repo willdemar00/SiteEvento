@@ -61,6 +61,10 @@
 
                 <input type="text" name="cidade" placeholder="Nome da cidade..." id="cidade"required><br>
 
+                <label for="data">Data do evento</label>
+
+                <input type="date" name="data" id="idate">
+
                 <label class="private" for="privado">Privado?</label>
 
                 <select class="selec" name="privado" id="privado">

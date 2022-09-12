@@ -10,4 +10,5 @@ class EventoMD extends Model
     protected $table = 'eventos';
     use HasFactory;
     protected $casts =['itens'=>'array'];
+    protected $datas=['data'];
 }
