@@ -1,16 +1,18 @@
 /* CONFIGURAÇÃO GERAL */
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-weight: 800;
-    
+
 }
-body{
+
+body {
     margin: auto;
     text-align: center;
 }
-.msg{
+
+.msg {
     background-color: #8df2b04a;
     padding: 8px 2px 8px 2px;
     border: solid 1px #45a166;
@@ -21,87 +23,93 @@ body{
     box-shadow: 1px 2px 2px 0px #0000009e;
 
 }
-.titulo{
+
+.titulo {
     display: flex;
     justify-content: center;
 }
-h2{
+
+h2 {
     padding: 0px 120px 0px 120px;
 }
 
 
 /* CABEÇARIO */
 
-header{
+header {
     background-color: #F28D9F;
     align-items: center;
-    text-align:center;
-    border:solid 3px #4B4573;
+    text-align: center;
+    border: solid 3px #4B4573;
     border-radius: 10px 10px 0px 0px;
     margin-left: 10px;
     margin-right: 20px;
-    
+
 
 }
 
-.conter{ 
+.conter {
 
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-
 
 }
-img{
-    
+
+img {
+
     border-radius: 50%;
     width: 100px;
     margin: 3px;
 }
-.menu{
+
+.menu {
     display: flex;
     list-style: none;
- 
+
 }
-li>a{
+
+li>a {
     margin: 05px;
     padding: -1px 5px 0px 5px;
     text-decoration: none;
-    color:#4B4573;
+    color: #4B4573;
     text-align: justify;
 }
-.menu a:hover{
-    
-    border: solid 2px #4B4573 ;
+
+.menu a:hover {
+
+    border: solid 2px #4B4573;
     border-radius: 10px;
     padding: 2px 5px 2px 5px;
-    background-color:#7EB0F2;
+    background-color: #7EB0F2;
     color: #F2F2F2;
-    box-shadow:inset 1px 1px 2px 2px #5688ca;
+    box-shadow: inset 1px 1px 2px 2px #5688ca;
 
 
 }
-.menu a:active{
-    background-color:#71a2e1 ;
+
+.menu a:active {
+    background-color: #71a2e1;
     box-shadow: inset -2px -3px 2px 5px #00000029;
     font-weight: 400;
 
 
 }
-.colun{
+
+.colun {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-div>label{
-    color:#4B4573 ;
+
+div>label {
+    color: #4B4573;
     font-weight: bold;
-    font-size:larger;
-    background-color:#F28D9F;
+    font-size: larger;
+    background-color: #F28D9F;
     border-radius: 5px;
     border: solid 2px #4B4573;
     padding: 3px;
@@ -111,21 +119,23 @@ div>label{
 
 /* MAIN */
 
-div.card{
-    display:inline-block;
-    border:solid 2px #4B4573;
+div.card {
+    display: inline-block;
+    border: solid 2px #4B4573;
     color: #4B4573;
     border-radius: 5px;
-    text-align:center;
+    text-align: center;
     margin: 5px 1px 5px 1px;
-   
+
 }
-div h4{
-    text-align:center;
+
+div h4 {
+    text-align: center;
     padding-left: 5px;
     padding-right: 5px;
 }
-.card p{
+
+.card p {
     padding: 2px;
     background-color: #7EB0F2;
     border: solid 1px #4B4573;
@@ -133,110 +143,128 @@ div h4{
     margin: 5px;
 
 }
-p>a{
+
+p>a {
     text-decoration: none;
     color: #4B4573;
 }
-p:hover{
-   background-color:#F28D9F ;
+
+p:hover {
+    background-color: #F28D9F;
 }
 
-input,.botton{
+input,
+.botton {
     color: #4B4573;
     border: solid 2px #4B4573;
-    background-color:#f9f9f9;
+    background-color: #f9f9f9;
     border-radius: 5px 0px 0px 5px;
     margin-top: 8px;
-    margin-right: 5px;
+    margin-right: -2px;
     margin-bottom: 5px;
     padding: 5px;
 }
-form,h3{
+
+form,
+h3 {
     padding: 5px;
     color: #4B4573;
 }
 
-.botton{
+.botton {
     border-radius: 0px 5px 5px 0px;
-    background-color:#7EB0F2;
+    background-color: #7EB0F2;
     margin-left: -3px;
 }
-.botton:hover{
-    background-color:#F28D9F;
+
+.botton:hover {
+    background-color: #F28D9F;
 
 }
-main{
-    padding:10px 10px ;
+
+main {
+    padding: 10px 10px;
     background-color: #F2F2F2;
     border: solid 2px #4B4573;
-    border-top:none;
+    border-top: none;
     margin: 0px 20px 10px 10px;
 }
 
 /* CRIAR EVENTO*/
 
-.selec,option{
+.selec,
+option {
     border-radius: 5px;
-    border:solid 2px #4B4573;
+    border: solid 2px #4B4573;
     color: #4B4573;
     margin-bottom: 5px;
 }
-div.criar{
+
+div.criar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
 }
-.private{
+
+.private {
     margin: 5px 0px 10px 0px;
 }
-.botCriar{
-        color: #4B4573;
-        border: solid 2px #4B4573;
-        background-color:#7EB0F2;
-        border-radius: 5px 5px 5px 5px;
-        margin-top: 8px;
-        margin-right: -3px;
-        margin-bottom: 5px;
-        padding: 5px 20px;
+
+.botCriar {
+    color: #4B4573;
+    border: solid 2px #4B4573;
+    background-color: #7EB0F2;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 8px;
+    margin-right: -3px;
+    margin-bottom: 5px;
+    padding: 5px 20px;
 }
-.botCriar:hover{
-    background-color:#F28D9F;
+
+.botCriar:hover {
+    background-color: #F28D9F;
 
 }
-input:hover{
-    background-color:#7eb0f249;
+
+input:hover {
+    background-color: #7eb0f249;
 }
-.dados>div>input{
+
+.dados>div>input {
     border-radius: 5px;
 
 }
-h2{
+
+h2 {
     background-color: #F28D9F;
-   text-align: center;
-   margin-bottom: 10px;
-   border: solid 2px #4B4573;
-   border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: solid 2px #4B4573;
+    border-radius: 5px;
 }
-.chak{
-text-align: left;
-border:solid 2px #4B4573;
-border-radius: 5px;
-background-color: #7eb0f254;
+
+.chak {
+    text-align: left;
+    border: solid 2px #4B4573;
+    border-radius: 5px;
+    background-color: #7eb0f254;
 
 }
-#Ichak{
+
+#Ichak {
     margin-left: 5px;
 }
 
 /* mais informaçõaes do evento */
-.imgInfor{
+.imgInfor {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
 }
-.imgCont{
+
+.imgCont {
     width: 120px;
     border: solid 2px #4B4573;
     border-radius: 5px;
@@ -245,33 +273,40 @@ background-color: #7eb0f254;
     margin-right: 20px;
     margin-top: 10px;
 }
-.txt,h1{
+
+.txt,
+h1 {
     margin: 10px;
     text-align: left;
     color: #4B4573;
 }
-span{
+
+span {
     margin: 10px;
 }
-.conter1{
-   
-    margin:auto;
+
+.conter1 {
+
+    margin: auto;
     max-width: 700px;
-    box-shadow:1px 2px 9px 0px rgba(0, 0, 0, 0.622);
+    box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.622);
     border: solid 2px #4B4573;
     border-radius: 5px;
 
 }
-div>p{
+
+div>p {
     background-color: #7EB0F2;
     border: solid 2px #4B4573;
     border-radius: 5px;
 
 }
-ul{
-    list-style:none;
+
+ul {
+    list-style: none;
     padding: 5px;
 }
-p{
+
+p {
     padding-left: 5px;
 }
