@@ -33,9 +33,9 @@
                     <li>
                         <a class="ativo" href="/criarEvento">Criar Eventos</a>
                     <li>
-                        <a href="#">Entrar</a>
+                        <a href="/login">Entrar</a>
                     <li>
-                        <a href="#">Cadastrar</a>
+                        <a href="/register">Cadastrar</a>
                 </ul>
             </div>
         </nav>
