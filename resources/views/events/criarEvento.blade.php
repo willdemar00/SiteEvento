@@ -23,19 +23,31 @@
 </head>
 
 <body>
-    <header>
+<header>
         <nav>
             <div class="conter">
                 <img src="img/exemplo.png" alt="">
                 <ul class="menu">
+                        @auth
                     <li>
                         <a href="/eventos">Eventos</a>
                     <li>
-                        <a class="ativo" href="/criarEvento">Criar Eventos</a>
+                        <a href="/criarEvento">Criar Eventos</a>
+                        
+                    <li>
+                        <a href="/dashboard">Meus Eventos</a>
+                    <li>
+                        <form action="/logout" method="POST">
+                        @csrf
+                            <p><a href="/dashboard" onclick="event.preventDefault();this.closest('form').submit();">Sair</a></p>
+                        </form>
+                        @endauth
+                        @guest
                     <li>
                         <a href="/login">Entrar</a>
                     <li>
                         <a href="/register">Cadastrar</a>
+                        @endguest
                 </ul>
             </div>
         </nav>

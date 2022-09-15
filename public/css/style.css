@@ -54,6 +54,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 450px;
 
 }
 
@@ -67,6 +68,7 @@ img {
 .menu {
     display: flex;
     list-style: none;
+    align-items: center;
 
 }
 
@@ -116,6 +118,7 @@ div>label {
 
 
 }
+
 
 /* MAIN */
 

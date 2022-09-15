@@ -11,4 +11,9 @@ class EventoMD extends Model
     use HasFactory;
     protected $casts =['itens'=>'array'];
     protected $datas=['data'];
+
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
 }
