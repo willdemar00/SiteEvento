@@ -32,7 +32,7 @@
                     <li>
                         <a href="/eventos">Eventos</a>
                     <li>
-                        <a href="/criarEvento">Criar Eventos</a>
+                        <a class="ativo" href="/criarEvento">Criar Eventos</a>
                         
                     <li>
                         <a href="/dashboard">Meus Eventos</a>

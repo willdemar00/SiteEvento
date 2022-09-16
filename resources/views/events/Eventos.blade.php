@@ -31,7 +31,7 @@
                 <ul class="menu">
                         @auth
                     <li>
-                        <a href="/eventos">Eventos</a>
+                        <a class="ativo"  href="/eventos">Eventos</a>
                     <li>
                         <a href="/criarEvento">Criar Eventos</a>
                         

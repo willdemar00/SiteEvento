@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\EventoMD;
+use App\Models\User;
 
 class EventController extends Controller
 {
@@ -69,6 +70,16 @@ class EventController extends Controller
     public function show($id)
     {
         $events = EventoMD::findOrfail($id);
-        return view('events.show', ['events' => $events]);
+        $donoEvento= user::where('id',$events->user_id)->first()->toArray();
+        return view('events.show', ['events' => $events,'donoEvento'=>$donoEvento]);
+    }
+    public function dash(){
+        $user=auth()->user();
+        $events= $user->EventoMD;
+        return view('events.dashboard',['events'=>$events]);
+    }
+    public function deletar($id){
+        EventoMD::findOrFail($id)->delete();
+        return redirect('/dashboard')->with('msg','Evento deletado com sucesso!');
     }
 }

@@ -21,6 +21,7 @@
             <div class="txt">
                 <p>Informacões do evento</p>
                 {{$events->cidade}} <br>
+                {{$donoEvento['name']}} <br>
                 {{$events->descricao}} <br>
                 {{date('d/m/Y',strtotime($events->data))}}
                 <p>O evento conta com</p>
@@ -33,6 +34,9 @@
                         @endforeach
                     </ul>
                 </div>
+                <form action="">
+                    <input class="botCriar2" type="submit" value="Confirmar presença">
+                </form>
 
             </div>
         </span>

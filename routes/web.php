@@ -9,17 +9,12 @@ Route::get('/', [EventController::class, 'index']);
 
 Route::get('/eventos', [EventController::class, 'evento']);
 
-Route::get('/criarEvento', [EventController::class, 'criar']);
+Route::get('/criarEvento', [EventController::class, 'criar'])->middleware('auth');
 Route::get('/infor/{id}', [EventController::class, 'show']);
 
 Route::post('/criar', [EventController::class, 'store']);
+Route::get('/dashboard',[EventController::class,'dash']);
+Route::get('/evento/{id}',[EventController::class,'deletar']);
+Route::get('/evento/{id}',[EventController::class,'editar']);
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
